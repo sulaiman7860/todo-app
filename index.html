@@ -60,10 +60,10 @@
                                         placeholder="Description"></textarea>
                                 </div>
                                 <div class="col-12 text-center mt-3">
-                                    <button class="btn btn-danger w-50" onclick="handleSubmit()">Add Task</button>
+                                    <button class="btn btn-danger w-50 m-auto" onclick="handleSubmit()" id="addTaskButton">Add Task</button>
                                 </div>
                                 <div class="col-12 text-center mt-3">
-                                    <button class="btn btn-danger w-50 d-none" onclick="updateSubmit()">Update Task</button>
+                                    <button class="btn btn-danger w-50 m-auto" style="display: none;" onclick="handleEdit()" id="updateTaskButton">Update Task</button>
                                 </div>
                             </div>
                         </form>
@@ -78,7 +78,7 @@
                     <div class="col-12">
                         <div class="container w-100">
                             <div class="mt-3 border border-secondary py-3">
-                                <div class="container" id="output">
+                                <div class="container text-center" id="output">
                                 </div>
                             </div>
                         </div>
@@ -99,7 +99,7 @@
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         <script src="./js/script.js"></script>
     </body>
